@@ -15,11 +15,11 @@ class __TwigTemplate_25835d98c443ce34d60cdb13675f2b9d01faaa7396eebb3272d296da61d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a9d6e00f2837418561e4e50185a98586eac961c49106e36ef8f673cf2174fc34 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a9d6e00f2837418561e4e50185a98586eac961c49106e36ef8f673cf2174fc34->enter($__internal_a9d6e00f2837418561e4e50185a98586eac961c49106e36ef8f673cf2174fc34_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
+        $__internal_1d365a0a894498a731b9715fb42a7f27e7ae6c184208de08f86357444404e7bf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1d365a0a894498a731b9715fb42a7f27e7ae6c184208de08f86357444404e7bf->enter($__internal_1d365a0a894498a731b9715fb42a7f27e7ae6c184208de08f86357444404e7bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
 
-        $__internal_bcf11707ec6de0d361c7c82de64596209e6b07a4a01f219c86962e8c86cb31a6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bcf11707ec6de0d361c7c82de64596209e6b07a4a01f219c86962e8c86cb31a6->enter($__internal_bcf11707ec6de0d361c7c82de64596209e6b07a4a01f219c86962e8c86cb31a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
+        $__internal_49e09968882e452c1eaef9c59166dbba8197a7426e87947ac9dfd9caeafea1a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_49e09968882e452c1eaef9c59166dbba8197a7426e87947ac9dfd9caeafea1a0->enter($__internal_49e09968882e452c1eaef9c59166dbba8197a7426e87947ac9dfd9caeafea1a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
 
         // line 1
         echo "<?php use Symfony\\Component\\Form\\ChoiceList\\View\\ChoiceGroupView;
@@ -37,10 +37,10 @@ class __TwigTemplate_25835d98c443ce34d60cdb13675f2b9d01faaa7396eebb3272d296da61d
 <?php endforeach ?>
 ";
         
-        $__internal_a9d6e00f2837418561e4e50185a98586eac961c49106e36ef8f673cf2174fc34->leave($__internal_a9d6e00f2837418561e4e50185a98586eac961c49106e36ef8f673cf2174fc34_prof);
+        $__internal_1d365a0a894498a731b9715fb42a7f27e7ae6c184208de08f86357444404e7bf->leave($__internal_1d365a0a894498a731b9715fb42a7f27e7ae6c184208de08f86357444404e7bf_prof);
 
         
-        $__internal_bcf11707ec6de0d361c7c82de64596209e6b07a4a01f219c86962e8c86cb31a6->leave($__internal_bcf11707ec6de0d361c7c82de64596209e6b07a4a01f219c86962e8c86cb31a6_prof);
+        $__internal_49e09968882e452c1eaef9c59166dbba8197a7426e87947ac9dfd9caeafea1a0->leave($__internal_49e09968882e452c1eaef9c59166dbba8197a7426e87947ac9dfd9caeafea1a0_prof);
 
     }
 
@@ -77,6 +77,6 @@ class __TwigTemplate_25835d98c443ce34d60cdb13675f2b9d01faaa7396eebb3272d296da61d
         <option value=\"<?php echo \$view->escape(\$choice->value) ?>\" <?php echo \$formHelper->block(\$form, 'choice_attributes', array('choice_attr' => \$choice->attr)) ?><?php if (\$is_selected(\$choice->value, \$value)): ?> selected=\"selected\"<?php endif?>><?php echo \$view->escape(false !== \$choice_translation_domain ? \$translatorHelper->trans(\$choice->label, array(), \$choice_translation_domain) : \$choice->label) ?></option>
     <?php endif ?>
 <?php endforeach ?>
-", "@Framework/Form/choice_widget_options.html.php", "/Users/bernardopineda/htdocs/work/lynda/symfony/learn-symfony-3/passing_data/_final/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/choice_widget_options.html.php");
+", "@Framework/Form/choice_widget_options.html.php", "/Users/tietohallinto/Documents/GitHub/symfony-project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/choice_widget_options.html.php");
     }
 }

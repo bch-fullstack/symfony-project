@@ -15,11 +15,11 @@ class __TwigTemplate_126ff0bbf48f3cb1013d0339b5f96018de579560c1e7852b08a3b1a3bad
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d4961d2089aaca78fded40d60ab6157a1de735a846ce5375662ad76c90b4a621 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d4961d2089aaca78fded40d60ab6157a1de735a846ce5375662ad76c90b4a621->enter($__internal_d4961d2089aaca78fded40d60ab6157a1de735a846ce5375662ad76c90b4a621_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_row.html.php"));
+        $__internal_ca9d5121fa2d61adabfece80175321fec732106de26c67d543e8d100707a5281 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ca9d5121fa2d61adabfece80175321fec732106de26c67d543e8d100707a5281->enter($__internal_ca9d5121fa2d61adabfece80175321fec732106de26c67d543e8d100707a5281_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_row.html.php"));
 
-        $__internal_598310a262945211bb2ba0985677850d9cb3ca0d8f0f14233c065fb6826cd204 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_598310a262945211bb2ba0985677850d9cb3ca0d8f0f14233c065fb6826cd204->enter($__internal_598310a262945211bb2ba0985677850d9cb3ca0d8f0f14233c065fb6826cd204_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_row.html.php"));
+        $__internal_2b3a601780e114d65b56b5dadb572a8e9e40bd5eb160885708ea8acbb69bf83b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2b3a601780e114d65b56b5dadb572a8e9e40bd5eb160885708ea8acbb69bf83b->enter($__internal_2b3a601780e114d65b56b5dadb572a8e9e40bd5eb160885708ea8acbb69bf83b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_row.html.php"));
 
         // line 1
         echo "<div>
@@ -27,10 +27,10 @@ class __TwigTemplate_126ff0bbf48f3cb1013d0339b5f96018de579560c1e7852b08a3b1a3bad
 </div>
 ";
         
-        $__internal_d4961d2089aaca78fded40d60ab6157a1de735a846ce5375662ad76c90b4a621->leave($__internal_d4961d2089aaca78fded40d60ab6157a1de735a846ce5375662ad76c90b4a621_prof);
+        $__internal_ca9d5121fa2d61adabfece80175321fec732106de26c67d543e8d100707a5281->leave($__internal_ca9d5121fa2d61adabfece80175321fec732106de26c67d543e8d100707a5281_prof);
 
         
-        $__internal_598310a262945211bb2ba0985677850d9cb3ca0d8f0f14233c065fb6826cd204->leave($__internal_598310a262945211bb2ba0985677850d9cb3ca0d8f0f14233c065fb6826cd204_prof);
+        $__internal_2b3a601780e114d65b56b5dadb572a8e9e40bd5eb160885708ea8acbb69bf83b->leave($__internal_2b3a601780e114d65b56b5dadb572a8e9e40bd5eb160885708ea8acbb69bf83b_prof);
 
     }
 
@@ -57,6 +57,6 @@ class __TwigTemplate_126ff0bbf48f3cb1013d0339b5f96018de579560c1e7852b08a3b1a3bad
         return new Twig_Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
-", "@Framework/Form/button_row.html.php", "/Users/bernardopineda/htdocs/work/lynda/symfony/learn-symfony-3/passing_data/_final/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/button_row.html.php");
+", "@Framework/Form/button_row.html.php", "/Users/tietohallinto/Documents/GitHub/symfony-project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/button_row.html.php");
     }
 }

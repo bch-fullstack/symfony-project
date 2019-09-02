@@ -15,20 +15,20 @@ class __TwigTemplate_8b87475347bcd6bc9fe060ec4260beea5b38d682fdb039cd2a60fac765d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_80b56d9acc1b00d6d35fe2e3778f4e5e07d4596d460ad9499e5e33cb92c09b9f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_80b56d9acc1b00d6d35fe2e3778f4e5e07d4596d460ad9499e5e33cb92c09b9f->enter($__internal_80b56d9acc1b00d6d35fe2e3778f4e5e07d4596d460ad9499e5e33cb92c09b9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/reset_widget.html.php"));
+        $__internal_81e032b7a13739f8c884f7b02b1ab272b161254247f062f841b223846ad78b55 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_81e032b7a13739f8c884f7b02b1ab272b161254247f062f841b223846ad78b55->enter($__internal_81e032b7a13739f8c884f7b02b1ab272b161254247f062f841b223846ad78b55_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/reset_widget.html.php"));
 
-        $__internal_81cdddce15406815d028e99503fe474a2d1cfc37bee0b8a146b9d12551884e10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_81cdddce15406815d028e99503fe474a2d1cfc37bee0b8a146b9d12551884e10->enter($__internal_81cdddce15406815d028e99503fe474a2d1cfc37bee0b8a146b9d12551884e10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/reset_widget.html.php"));
+        $__internal_05388c104378a5b62c63b64a245d60177a48bf65dd63f3e2c886adaae93133cb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_05388c104378a5b62c63b64a245d60177a48bf65dd63f3e2c886adaae93133cb->enter($__internal_05388c104378a5b62c63b64a245d60177a48bf65dd63f3e2c886adaae93133cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/reset_widget.html.php"));
 
         // line 1
         echo "<?php echo \$view['form']->block(\$form, 'button_widget', array('type' => isset(\$type) ? \$type : 'reset')) ?>
 ";
         
-        $__internal_80b56d9acc1b00d6d35fe2e3778f4e5e07d4596d460ad9499e5e33cb92c09b9f->leave($__internal_80b56d9acc1b00d6d35fe2e3778f4e5e07d4596d460ad9499e5e33cb92c09b9f_prof);
+        $__internal_81e032b7a13739f8c884f7b02b1ab272b161254247f062f841b223846ad78b55->leave($__internal_81e032b7a13739f8c884f7b02b1ab272b161254247f062f841b223846ad78b55_prof);
 
         
-        $__internal_81cdddce15406815d028e99503fe474a2d1cfc37bee0b8a146b9d12551884e10->leave($__internal_81cdddce15406815d028e99503fe474a2d1cfc37bee0b8a146b9d12551884e10_prof);
+        $__internal_05388c104378a5b62c63b64a245d60177a48bf65dd63f3e2c886adaae93133cb->leave($__internal_05388c104378a5b62c63b64a245d60177a48bf65dd63f3e2c886adaae93133cb_prof);
 
     }
 
@@ -53,6 +53,6 @@ class __TwigTemplate_8b87475347bcd6bc9fe060ec4260beea5b38d682fdb039cd2a60fac765d
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'button_widget', array('type' => isset(\$type) ? \$type : 'reset')) ?>
-", "@Framework/Form/reset_widget.html.php", "/Users/bernardopineda/htdocs/work/lynda/symfony/learn-symfony-3/passing_data/_final/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/reset_widget.html.php");
+", "@Framework/Form/reset_widget.html.php", "/Users/tietohallinto/Documents/GitHub/symfony-project/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/reset_widget.html.php");
     }
 }

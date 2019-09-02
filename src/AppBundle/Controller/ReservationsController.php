@@ -9,12 +9,21 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ReservationsController extends Controller
 {
-    
+    /**
+     * @Route("/reservations", name="reservations")
+     */
     public function showIndex()
     {
-
+        return $this->render("reservations/index.html.twig");
         
     }
-    
+
+    /**
+     * @Route("/reservations/{id_client}", name="booking")
+     */
+    public function book(Request $request, $id_client) {
+        $data['something'] = $id_client;
+        return $this->render("reservations/book.html.twig", $data);
+    }
 
 }
