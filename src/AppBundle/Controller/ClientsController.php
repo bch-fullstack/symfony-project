@@ -11,46 +11,9 @@ use Symfony\Component\HttpClient\HttpClient;
 class ClientsController extends Controller
 {
 
-    private $client_data = [
-        [
-            'id' => 0,
-            'title' => 'ms',
-            'lastname' => 'Jamille',
-            'address' => '',
-            'zipcode' => '00100',
-            'city' => 'Helsinki',
-            'email' => 'jamille@email.com'
-        ],
-        [
-            'id' => 1,
-            'title' => 'mr',
-            'lastname' => 'Gerrits',
-            'address' => '',
-            'zipcode' => '00200',
-            'city' => 'Helsinki',
-            'email' => 'gerrits@otheremail.com'
-        ],
-        [
-            'id' => 2,
-            'title' => 'mr',
-            'lastname' => 'Valantine',
-            'address' => '',
-            'zipcode' => '',
-            'city' => 'Helsinki',
-            'email' => 'valantine@moreemail.com'
-        ],
-        [
-            'id' => 3,
-            'title' => 'mr',
-            'lastname' => 'Dipendra',
-            'address' => '',
-            'zipcode' => '',
-            'city' => 'vantaa',
-            'email' => 'dipendra@mail.com'
-        ]      
-    ];
+    private $client_data = [];
 
-    private function callAPI($method, $url, $data = false)
+    private function callAPI($method, $url)
     {
         $curl = curl_init();
 
@@ -58,7 +21,7 @@ class ClientsController extends Controller
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
         $result = curl_exec($curl);
-        
+
         $result = json_decode($result);
         curl_close($curl);
 
@@ -72,25 +35,41 @@ class ClientsController extends Controller
     {
         $data = [];
 
-        $response =$this->callAPI("GET", "https://randomuser.me/api/?results=200");
-        $data['clients'] = $response;
+        $this->client_data = $this->callAPI("GET", "https://randomuser.me/api/?results=200");
+        $data['clients'] = $this->client_data;
 
         return $this->render("clients/index.html.twig", $data);
         
     }
 
-    
-    public function showDetails()
+    /**
+     * @Route("/guests/modify/{id_client}", name="modify_client")
+     */
+    public function showDetails(Request $request, $id_client)
     {
 
-        
+        $data = [];
+
+        $this->client_data = $this->callAPI("GET", "https://randomuser.me/api/?results=200");
+        $data['clients'] = $this->client_data;
+        $client_data = $this->client_data[$id_client];
+
+        $data['form'] = $client_data;
+
+        return $this->render("clients/form.html.twig", $data);
 
     }
 
-    
+    /**
+     * @Route("/guests/new", name="new_client")
+     */
     public function showNew()
     {
+        $data = [];
 
+        $data['clients'] = $this->client_data;
+
+        return $this->render("clients/form.html.twig", $data);
         
     }
 
