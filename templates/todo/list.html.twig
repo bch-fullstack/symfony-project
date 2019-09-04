@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Task list
+{% endblock %}
+
+{% block todo %}
+
+    {% if taskList is not null and taskList is defined %}
+
+        {% for task in taskList %}
+            <div class="taskContent">{{ task }}</div>
+        {% endfor %}
+
+    {% else %}
+        <div>There has been no task found</div>
+    {% endif %}
+
+{% endblock %}
