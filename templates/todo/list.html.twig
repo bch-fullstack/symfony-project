@@ -5,7 +5,10 @@
 {% endblock %}
 
 {% block todo %}
-
+    <div>
+        Hello
+        {{ user }}. Here are your tasks for today:
+    </div>
     {% if taskList is not null and taskList is defined %}
 
         {% for task in taskList %}
